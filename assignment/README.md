@@ -1,0 +1,26 @@
+Directory structure is as follows:
+
+- assets/
+    - fonts/ - Fonts used throughout the page
+    - images/ - Various images used across the page
+    - scripts/ - JavaScript used on page
+        - templating.js - Core Controller that powers the page. Renders pages based on data returned from server, replacing any placeholders with content from database asynchronously.
+- backend/ - PHP model, including the DB lookup scripts
+    - lib/ - Helper scripts
+    - lib.php - Includes helpers
+    - query.php - Returns content from database
+    - storage.db - SQLite database
+- Build/   - Unity WebGL build, using WebAssembly. All assets (including JavaScript!) excluding the loader are compressed using Brotli compression to reduce network traffic. Please decompress if you are attempting to view these files
+- components/ - Components definitions, as used by templating system
+    - evals/ - Component that can be incldued to run some script on page change. The only current example is to change the title on the browser tab.
+- data/ - Page data, as used by templating system
+    - default/ - Template to fill in for the main framework of the page
+    - pages/ - Various pages and their data
+    - special/ - Special components (navbar and footer)
+    - components.json - Manifest containing all the components currently in use
+    - pages.json - Manifest containing default page, and all the other pages currently in use
+- StreamingAssets/ - Directory Unity will stream data from. Currently includes data for Adaptive Light Probe Volumes (APVs)
+- custom.css - Styling for the page
+- index.html - Main loader for the page
+- loader.css - Loading animation for the page. Broken out to make animation data easier to modify
+- README.md - This file
