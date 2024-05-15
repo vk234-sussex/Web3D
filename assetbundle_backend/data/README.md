@@ -1,3 +1,3 @@
 The above are Unity AssetBundles, due to this project not using X3D and instead making use of Unity for higher fidelity rendering. These bundles contain compressed models, textures, shaders and materials, alongside component information.
 
-Please refer to <a href="">the BundleData directory in the Unity Project, extracted in this directory for your convenience.</a>
+Please refer to the <a href="unity_project/Assets/BundleData/Models/">./unity_project/Assets/BundleData/Models/</a> directory, which is split by each bundle that will be compiled, and contains all the relevant data stored within the bundle.
