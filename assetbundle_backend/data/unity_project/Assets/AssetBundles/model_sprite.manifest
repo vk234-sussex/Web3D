@@ -1,0 +1,62 @@
+ManifestFileVersion: 0
+UnityVersion: 6000.0.0f1
+CRC: 1874414987
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 76b1f6c64c8a72921763415e20e56a04
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 40e1b276e945c22df6d8b864a756b8b1
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: deecfa45605487d27e10f93b934f0cd5
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 39a2bd3e39b7461f94064ae424adf413, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: cda3c10d8952648709c64f2ace5468a6, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 31315d9d8eb8740e4a679b5fe78c5a44, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 599d37496f1cf4d07aa0b6fc7535eba4, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 9cf01edb9adce4c6a9dc66a394c40e57, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/BundleData/Models/Sprite/Mats/Label.mat
+- Assets/BundleData/Models/Sprite/Sprite_Material.003_MetallicSmoothness.png
+- Assets/BundleData/Models/Sprite/Sprite.blend
+- Assets/BundleData/Models/Sprite/StudioData.asset
+- Assets/BundleData/Models/Sprite/Sprite_Label_Test.png
+- Assets/BundleData/Models/Sprite/Sprite.fbx
+- Assets/BundleData/Models/Sprite/Sprite_Material.003_Normal.png
+- Assets/BundleData/Models/Sprite/Wireframe.mat
+- Assets/BundleData/Models/Sprite/Sprite_Material.003_AlbedoTransparency.png
+- Assets/BundleData/Models/Sprite/Mats/Bottle.mat
+- Assets/BundleData/Models/Sprite/Sprite_Material.001_AlbedoTransparency.png
+- Assets/BundleData/Models/Sprite/Sprite_Material.001_Normal.png
+- Assets/BundleData/Models/Sprite/Sprite_Material.001_MetallicSmoothness.png
+- Assets/BundleData/Models/Sprite/Prefab.prefab
+- Assets/BundleData/Models/Sprite/Sprite_Shader.shadergraph
+Dependencies:
+- /Users/valknight/OfflineDocuments/Web3D_Renderer/Assets/AssetBundles/model_coke

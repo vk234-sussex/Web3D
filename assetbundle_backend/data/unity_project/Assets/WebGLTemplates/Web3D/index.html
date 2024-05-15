@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>{{{ PRODUCT_NAME }}}</title>
+    <style>
+        html,
+        body {
+            font-family: sans-serif;
+            background: {{{ BACKGROUND || '#fff' }}};
+            width: 100%;
+            height: 100%;
+            overflow: visible;
+            padding: 0;
+            margin: 0;
+        }
+
+        .gameContainer {
+            height: 100%;
+            width: 100%;
+        }
+
+        .gameContainer canvas {
+            position: relative;
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+<div class="gameContainer">
+    <h1>Unity HTML5 as model renderer test</h1>
+    <p><i>Copyright Val Knight (2024)</i></p>
+    <button onclick="loadCokeCan()">Load Coke Can from server</button>
+    <button onclick="resetScene()">Reset scene</button>
+    <canvas id="unity-canvas"></canvas>
+    <script src="Build/{{{ LOADER_FILENAME }}}"></script>
+    <script>
+        function bootUnity(unityId)
+        {
+            var canvas = document.getElementById(unityId);
+            var config = {
+                dataUrl: "Build/{{{ DATA_FILENAME }}}",
+                frameworkUrl: "Build/{{{ FRAMEWORK_FILENAME }}}",
+                codeUrl: "Build/{{{ CODE_FILENAME }}}",
+                #if MEMORY_FILENAME
+                memoryUrl: "Build/{{{ MEMORY_FILENAME }}}",
+                #endif
+                #if SYMBOLS_FILENAME
+                symbolsUrl: "Build/{{{ SYMBOLS_FILENAME }}}",
+                #endif
+                streamingAssetsUrl: "StreamingAssets",
+                companyName: "{{{ COMPANY_NAME }}}",
+                productName: "{{{ PRODUCT_NAME }}}",
+                productVersion: "{{{ PRODUCT_VERSION }}}",
+            };
+
+            function progressHandler(progress) {
+                var percent = progress * 100 + '%';
+                canvas.style.background = 'linear-gradient(to right, white, white ' + percent + ', transparent ' + percent + ', transparent) no-repeat center';
+                canvas.style.backgroundSize = '100% 1rem';
+            }
+            
+            function onResize() {
+                // Do Resize Handling Here!
+            }
+
+            createUnityInstance(canvas, config, progressHandler).then(function (instance) {
+                canvas = instance.Module.canvas;
+                onResize();
+                // Export the Unity instance, such that it can be used externally
+                window.unityInstance = instance;
+            });
+            window.addEventListener('resize', onResize);
+            onResize();
+
+            if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+                // Mobile device style: fill the whole browser client area with the game canvas:
+                const meta = document.createElement('meta');
+                meta.name = 'viewport';
+                meta.content = 'width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes';
+                document.getElementsByTagName('head')[0].appendChild(meta);
+            }
+        }
+        function markAsReadyToLoad() {
+            console.warn("// TODO: received mark event in template. bind this properly to enable button!");
+        }
+
+        function markAsLoading() {
+            console.warn("// TODO: received mark loading in template. bind this properly to disable button");
+        }
+
+        function markLoaded() {
+            console.warn("// TODO: received mark loaded in template. bind this properly to enable button");
+        }
+
+        function sendMessageToInstantiatedObject(message) {
+            window.unityInstance.SendMessage('InstantiatedObject', message);
+        }
+
+        function setLit() {
+            sendMessageToInstantiatedObject('SetLit');
+        }
+
+        function setWireframe() {
+            sendMessageToInstantiatedObject('SetWireframe');
+        }
+
+        function loadModel(modelId) {
+            window.unityInstance.SendMessage('LoadFromNetwork', 'LoadModelBundleWithId', modelId);
+        }
+        
+        function resetScene() {
+            window.unityInstance.SendMessage('LoadFromNetwork', 'ResetScene');
+        }
+        
+        function loadCokeCan() {
+            loadModel("model_coke");
+        }
+        
+        // Export functions for Unity
+        window.markAsReadyToLoad = markAsReadyToLoad;
+        // Boot Unity!
+        bootUnity("unity-canvas")
+    </script>
+</div>
+</body>
+
+</html>

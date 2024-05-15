@@ -1,0 +1,17 @@
+ManifestFileVersion: 0
+UnityVersion: 6000.0.0f1
+CRC: 2454408360
+HashAppended: 0
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: model_coke
+      Dependencies: {}
+    Info_1:
+      Name: model_smartwater
+      Dependencies:
+        Dependency_0: model_coke
+    Info_2:
+      Name: model_sprite
+      Dependencies:
+        Dependency_0: model_coke

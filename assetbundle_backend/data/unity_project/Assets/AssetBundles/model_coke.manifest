@@ -1,0 +1,55 @@
+ManifestFileVersion: 0
+UnityVersion: 6000.0.0f1
+CRC: 2249084689
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 6883b6822c142d61d6d6638cf36d7bb3
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 40e1b276e945c22df6d8b864a756b8b1
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: b7e2119dce802f331b07bb99aa085e2f
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 39a2bd3e39b7461f94064ae424adf413, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: cda3c10d8952648709c64f2ace5468a6, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 31315d9d8eb8740e4a679b5fe78c5a44, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 599d37496f1cf4d07aa0b6fc7535eba4, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 9cf01edb9adce4c6a9dc66a394c40e57, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/BundleData/Models/CokeCan/CokeCan.blend
+- Assets/BundleData/Models/CokeCan/can_emission.png
+- Assets/BundleData/Models/CokeCan/Wireframe.mat
+- Assets/BundleData/Models/CokeCan/LitMat.mat
+- Assets/BundleData/Models/CokeCan/can_heightmap.png
+- Assets/BundleData/Models/CokeCan/CokeCanTex.jpg
+- Assets/Shaders/ModelShader.shadergraph
+- Assets/BundleData/Models/CokeCan/Prefab.prefab
+- Assets/BundleData/Models/CokeCan/StudioData.asset
+Dependencies: []
