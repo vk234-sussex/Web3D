@@ -24,3 +24,5 @@ Directory structure is as follows:
 - index.html - Main loader for the page
 - loader.css - Loading animation for the page. Broken out to make animation data easier to modify
 - README.md - This file
+
+Please also note <a href="../assetbundle_backend/">../assetbundle_backend/</a> which is where the renderer will load model data from. 
