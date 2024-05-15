@@ -1,0 +1,30 @@
+<nav class="main-navbar navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#" onclick="change_page('home');">
+            <div id="main-logo"></div>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#" onclick="change_page('home');" id="nav-home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="change_page('about');" id="nav-about">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                        aria-expanded="false">Drinks</a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#" onclick="change_page('coke');" id="nav-coke">Coca Cola</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="change_page('sprite');" id="nav-sprite">Sprite</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="change_page('smartwater');" id="nav-smartwater">Smartwater</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

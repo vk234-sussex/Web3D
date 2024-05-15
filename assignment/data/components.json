@@ -1,0 +1,38 @@
+[
+    {
+        "name": "logo",
+        "path": "components/logo.html"
+    },
+    {
+        "name": "cta-card",
+        "path": "components/cta-card.html"
+    },
+    {
+        "name": "jumbotron",
+        "path": "components/jumbotron.html"
+    },
+    {
+        "name": "jumbotron-no-button",
+        "path": "components/jumbotron-no-button.html"
+    },
+    {
+        "name": "unity",
+        "path": "components/unity.html"
+    },
+    {
+        "name": "supermarket-button",
+        "path": "components/supermarket-button.html"
+    },
+    {
+        "name": "eval-title-change",
+        "path": "components/evals/title.eval"
+    },
+    {
+        "name": "model-page",
+        "path": "components/model_page.html"
+    },
+    {
+        "name": "about-card",
+        "path": "components/about-card.html"
+    }
+]

@@ -1,0 +1,275 @@
+/* Fonts */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+@font-face {
+    font-family: cocaColaFont;
+    src: url("assets/fonts/LokiCola/LOKICOLA.TTF");
+}
+
+@font-face {
+    font-family: karrik;
+    src: url("assets/fonts/Karrik/Karrik-Regular.woff2");
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1, h2, h3, .active, b {
+    font-family: karrik, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Custom component declarations */
+
+.rendering-notice {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    z-index: 100;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.jumbotron-index-coke {
+    color: white;
+    background-image: url("assets/images/renders/Studio80s_CokeCan_BG_BrightnessAdjust.png") !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.jumbotron-index-sprite {
+    color: white;
+    background-image: url("assets/images/renders/Studio_Sprite.webp") !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.jumbotron-index-smartwater {
+    color: white;
+    background-image: url("assets/images/renders/Forest_Smartwater.webp") !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.jumbotron-index-inner {
+    background-color: rgba(0, 0, 0, 0.0) !important;
+}
+
+.jumbotron-content {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.logo-font > h1, .logo-font > h2 {
+    font-family: cocaColaFont !important;
+}
+
+.jumbotron-subtitle {
+    font-size: 16px;
+}
+
+
+.logo-subtitle {
+    font-size: 10px;
+    text-align: center;
+    font-weight: 200;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+/* Overrides */
+
+.main-navbar {
+    background-color: #fbfdfc !important;
+    color: white !important;
+}
+
+.brand-color-coke {
+    color: #d92f32;
+}
+
+.breadcrumb-item {
+    font-weight: 100 !important;
+}
+
+.active-breadcrumb {
+    font-weight: bold;
+}
+
+.navbar-brand {
+    color: #d92f32;
+    font-weight: bold;
+}
+
+.navbar-brand h1 {
+    font-size: 45px;
+    display: inline;
+}
+
+.navbar-brand h2 {
+    font-size: 43px;
+    display: inline;
+}
+
+.navbar-brand h3 {
+    display: inline;
+}
+
+.navbar-brand p {
+    display: inline;
+}
+.active {
+    background-color: black !important;
+    color: white !important;
+}
+
+.card-text {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.control-bar {
+    text-align: center;
+    padding: 8px;
+    background-color: rgba(0, 0, 0, 0.038);
+    margin-bottom: 8px;
+    border-radius: 8px;
+}
+
+.unity-binding-button {
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+    border: black;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 0px;
+}
+
+.main-page-bg {
+    margin: 10px;
+    border-radius: 0.5rem;
+    padding: 10px;
+    background-color: rgb(237, 237, 237);
+    filter: drop-shadow(0px 0px 2px #000000);
+}
+
+.carousel-item-jumbotron {
+    background-color: transparent !important;
+}
+
+.carousel-controls {
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-controls > .btn {
+    margin: 10px;
+}
+
+/*
+.nav-link {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.nav-link:hover {
+    color: white !important;
+}
+
+
+.nav-link:visited {
+    color: white !important;
+}
+
+.nav-link.show {
+    color: white !important;
+}
+.nav-link.active {
+    color: white !important;
+}
+*/
+
+.jumbotron-outer {
+    min-height: 75vh;
+}
+
+.carousel-indicators-index {
+    width: fit-content;
+    margin-bottom: unset;
+    margin-left: unset;
+    margin-right: unset;
+    position: unset;
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+}
+
+.carousel-indicators-index-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 10px;
+}
+
+.carousel-indicators [data-bs-target] {
+	box-sizing: content-box;
+	flex: 0 1 auto;
+	width: 30px;
+	height: 3px;
+	padding: 0;
+	margin-right: 3px;
+	margin-left: 3px;
+	text-indent: -999px;
+	cursor: pointer;
+	background-color: #888888;
+	background-clip: padding-box;
+	border: 0;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	opacity: 1;
+	transition: opacity .6s ease;
+}
+
+.arrow {
+	box-sizing: content-box;
+	flex: 0 1 auto;
+	width: unset !important;
+	height: unset !important;
+	padding: unset !important;
+	margin-right: unset !important;
+	margin-left: unset !important;
+	text-indent: unset !important;
+	cursor: pointer !important;
+	background-color: unset !important;
+	background-clip: unset !important;
+	border: unset !important;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+    margin-top: 2px;
+	opacity: 1;
+	transition: opacity .6s ease;
+}
+
+.arrow > span    {
+    height: 1rem;
+    width: 1rem;
+    filter: brightness(0) saturate(100%) invert(0%) sepia(99%) saturate(0%) hue-rotate(213deg) brightness(102%) contrast(99%);
+}
+
+.brand-page-container {
+    padding-top: 10px;
+    width: 100%;
+}
+
+.brand-page-container-coke {
+    background-color: rgb(255, 225, 225);
+}
+
+.brand-page-container-smartwater {
+    background-color: rgb(235, 235, 255);
+}
+
+.brand-page-container-sprite {
+    background-color: rgb(231, 255, 231);
+}

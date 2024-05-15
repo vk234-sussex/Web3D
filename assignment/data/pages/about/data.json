@@ -1,0 +1,37 @@
+[
+    {
+        "type": "about-card",
+        "name": "about-rendering",
+        "format": {
+            "db-name": "rendering"
+        }
+    },
+    {
+        "type": "about-card",
+        "name": "about-models",
+        "format": {
+            "db-name": "models"
+        }
+    },
+    {
+        "type": "about-card",
+        "name": "about-stack",
+        "format": {
+            "db-name": "stack"
+        }
+    },
+    {
+        "type": "about-card",
+        "name": "about-content",
+        "format": {
+            "db-name": "content"
+        }
+    },
+    {
+        "type": "about-card",
+        "name": "about-license",
+        "format": {
+            "db-name": "license"
+        }
+    }
+]

@@ -1,0 +1,85 @@
+[
+    {
+        "type": "cta-card",
+        "name": "coca-cola-card",
+        "format": {
+            "db-name": "coca-cola",
+            "title": "Coca Cola",
+            "content": "Atlanta Beginnings: It was 1886, and in New York Harbour, workers were constructing the Statue of Liberty. Eight hundred miles away, another great American symbol was about to be unveiled.<br><br>Like many people who change history, John Pemberton, an Atlanta pharmacist, was inspired by simple curiosity. One afternoon, he stirred up a fragrant, caramel-coloured liquid and, when it was done, he carried it a few doors down to Jacobs' Pharmacy. Here, the mixture was combined with carbonated water and sampled by customers who all agreed - this new drink was something special. So Jacobs' Pharmacy put it on sale for five cents (about 3p) a glass.",
+            "button-text": "Find out more...",
+            "button-callback": "pages/coca-cola.html",
+            "card-img": "assets/images/coca_cola.jpg",
+            "card-alt": "Coca cola logo",
+            "brand-color": "#e03021",
+            "onclick": "change_page('coke');"
+        }
+    },
+    {
+        "type": "cta-card",
+        "name": "smartwater-card",
+        "format": {
+            "db-name": "smartwater",
+            "title": "Dr Pepper",
+            "content": "Dr Pepper's unique, sparkling blend of 23 fruit flavours has been around for well over a century and it's still the same, with that distinctive flavour you just can't quite put your tongue on.<br><br>It was created by Texas pharmacist Charles Alderton in 1885. He gave a sample of the first ever batch to Wade Morrison, a local shop owner, and Mr Morrison instantly agreed to stock the drink. The distinctive, bold taste of Dr Pepper has been popular ever since.",
+            "button-text": "Find out more...",
+            "button-callback": "pages/dr-pepper.html",
+            "card-img": "assets/images/dr_pepper.jpg",
+            "card-alt": "Dr Pepper logo",
+            "brand-color": "#841e2f"
+        }
+    },
+    {
+        "type": "cta-card",
+        "name": "sprite-card",
+        "format": {
+            "db-name": "sprite",
+            "title": "Sprite",
+            "content": "First introduced in 1961, crisp, refreshing, clean-tasting Sprite is now the world's leading lemon and lime flavoured soft drink and is sold in more than 190 different countries.<br><br>Sprite Zero, part of our no sugar Zero range, offers the delicious lemon lime taste of Sprite without the sugar or calories.",
+            "button-text": "Find out more...",
+            "button-callback": "pages/sprite.html",
+            "card-img": "assets/images/sprite.jpg",
+            "card-alt": "Sprite logo",
+            "brand-color": "#4daa4f"
+        }
+    },
+    {
+        "type": "jumbotron",
+        "name": "index-jumbotron-1",
+        "format": {
+            "db-name": "coca-cola-gb",
+            "button-link": "#",
+            "button-callback": "change_page('coke')",
+            "custom-classes": "jumbotron-index-coke",
+            "custom-classes-inner": "jumbotron-index-inner"
+        }
+    },
+    {
+        "type": "jumbotron",
+        "name": "index-jumbotron-2",
+        "format": {
+            "db-name": "sprite-gb",
+            "button-link": "#",
+            "button-callback": "change_page('sprite')",
+            "custom-classes": "jumbotron-index-sprite",
+            "custom-classes-inner": "jumbotron-index-inner"
+        }
+    },
+    {
+        "type": "jumbotron",
+        "name": "index-jumbotron-3",
+        "format": {
+            "db-name": "smartwater-gb",
+            "button-link": "#",
+            "button-callback": "change_page('smartwater')",
+            "custom-classes": "jumbotron-index-smartwater",
+            "custom-classes-inner": "jumbotron-index-inner"
+        }
+    },
+    {
+        "type": "eval-title-change",
+        "name": "title-change",
+        "format": {
+            "title": "Home"
+        }
+    }
+]

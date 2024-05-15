@@ -1,0 +1,20 @@
+{
+    "default" : "home",
+    "pages": [
+        "home",
+        "coke",
+        "smartwater",
+        "sprite",
+        "about"
+    ],
+    "special_pages": [
+        {
+            "target": "footer",
+            "path": "footer.html"
+        },
+        {
+            "target": "navigation",
+            "path": "navigation.html"
+        }
+    ]
+}

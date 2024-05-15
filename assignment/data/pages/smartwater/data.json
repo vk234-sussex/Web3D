@@ -1,0 +1,53 @@
+[
+    {
+        "type": "unity",
+        "name": "renderer",
+        "format": {}
+    },
+    {
+        "type": "supermarket-button",
+        "name": "tesco-button",
+        "format": {
+            "color": "#21529a",
+            "brand": "Tesco"
+        }
+    },
+    {
+        "type": "supermarket-button",
+        "name": "asda-button",
+        "format": {
+            "color": "#76a338",
+            "brand": "ASDA"
+        }
+    },
+    {
+        "type": "supermarket-button",
+        "name": "morrisons-button",
+        "format": {
+            "color": "#327c3a",
+            "brand": "Morrisons"
+        }
+    },
+    {
+        "type": "supermarket-button",
+        "name": "aldi-button",
+        "format": {
+            "color": "#1b4584",
+            "brand": "ALDI"
+        }
+    },
+    {
+        "type": "eval-title-change",
+        "name": "title-change",
+        "format": {
+            "title": "Smartwater"
+        }
+    },
+    {
+        "type": "model-page",
+        "name": "model-page",
+        "format": {
+            "brand": "smartwater"
+        }
+    }
+]

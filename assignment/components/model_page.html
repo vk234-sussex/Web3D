@@ -1,0 +1,138 @@
+<div class="brand-page-container brand-page-container-{brand}">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item" aria-current="page">Home</li>
+                        <li class="breadcrumb-item" aria-current="page">Drinks</li>
+                        <li class="breadcrumb-item brand-color-{brand} active-breadcrumb" aria-current="page"><b
+                                class="db-load" id="{brand}-page-breadcrumb-title"></b></li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <div class="row" style="padding-left: 12px; padding-right: 12px;">
+            <div class="col-lg-4 col-md-6 col-sm-12" style="padding:0;">
+                <!--<h2 class="placeholder-wave db-load" id="3d-model-main-header"><span class="placeholder bg-dark col-12"
+                    style="margin-bottom: 4px;"></span></h2>-->
+
+                <a class="btn btn-light border border-black col-12 mb-2" role="button" onclick="fullscreen();">
+                    <b><i class="bi bi-arrows-fullscreen"></i> Fullscreen</b>
+                </a>
+                <div id="renderer" style="background-color: black;"></div>
+                <!--<a class="btn btn-light border border-black col-12" data-bs-toggle="collapse" href="#collapseExample"
+                role="button" aria-expanded="false" aria-controls="collapseExample">
+                <b><span style="padding-right: 10px;" class="placeholder-wave db-load"
+                        id="3d-model-show-controls-button"><span class="placeholder bg-dark col-12"></span></b>
+            </a>-->
+
+                <div class="dropdown col-12 mb-2">
+                    <a class="btn btn-light border border-black col-12 dropdown-toggle" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Camera
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href='#' onclick="setCameraMode('default')">Default</a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href='#' onclick="setCameraMode('top')">Top</a>
+                        </li>
+                        <li><a class="dropdown-item" href='#' onclick="setCameraMode('front')">Front</a></li>
+                        <li><a class="dropdown-item" href='#' onclick="setCameraMode('back')">Back</a></li>
+                        <li><a class="dropdown-item" href='#' onclick="setCameraMode('left')">Left</a></li>
+                        <li><a class="dropdown-item" href='#' onclick="setCameraMode('right')">Right</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown col-12 mb-2">
+                    <a class="btn btn-light border border-black col-12 dropdown-toggle" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Rendering
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href='#' onclick="setWireframe()">Show
+                                Wireframe</a></li>
+                        <li><a class="dropdown-item" href='#' onclick="setLit()">Show with
+                                Textures</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href='#' onclick="toggleLights()">Toggle
+                                Lights</a></li>
+                        <li><a class="dropdown-item" href='#' onclick="toggleReflectionProbes()">Toggle Reflection
+                                Probes</a></li>
+                        <li><a class="dropdown-item" href='#' onclick="toggleStudio()">Toggle
+                                Studio</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown col-12 mb-2">
+                    <a class="btn btn-light border border-black col-12 dropdown-toggle" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Model
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href='#' onclick="setWireframe()">Show
+                                Wireframe</a></li>
+                        <li><a class="dropdown-item" href='#' onclick="setLit()">Show with
+                                Textures</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href='#' onclick="toggleAutoRotation()">Toggle Auto Rotate & Rotate
+                                Snap</a></li>
+                        <li> <button class="dropdown-item text-white bg-danger" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#debug-options-collapse" aria-expanded="false"
+                                aria-controls="debug-options-collapse">
+                                Show Debug Options <i class="fas fa-bug" aria-hidden="true"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-6 col-sm-12">
+                <div class="container">
+                    <div class="collapse" id="debug-options-collapse">
+                        <div class="row">
+                            <div class="col-xs-12 control-bar">
+                                <div class="container">
+                                    <div class="row">
+                                        <h2>Debug Options</h2>
+                                        <a class="btn btn-danger" href='#'
+                                            onclick="loadModel(prompt('Server model ID:'))">Ask Renderer to load model
+                                            by manifest ID<i class="fas fa-bug"></i></a>
+                                        <button class="btn btn-white" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#debug-options-collapse" aria-expanded="false"
+                                            aria-controls="debug-options-collapse">
+                                            Toggle Debug Options Menu <i class="fas fa-bug" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- About {brand}-->
+                <h1 class="placeholder-wave db-load" id="{brand}-page-main-header">
+                    <span class="placeholder bg-dark col-12"></span><br>
+                </h1>
+                <p class="placeholder-wave db-load" id="{brand}-page-main-content">
+                    <span class="placeholder bg-dark col-12"></span>
+                </p>
+                <h1 class="placeholder-wave db-load" id="{brand}-page-buy-now-header"><span
+                        class="placeholder bg-dark col-12"></span></h1>
+                <div id="aldi-button"></div>
+                <div id="tesco-button"></div>
+                <div id="asda-button"></div>
+                <div id="morrisons-button"></div>
+            </div>
+        </div>
+    </div>
+    <br>
+</div>
+</div>
+<script id="unity-load-event">var brand = "{brand}"; loadModel("model_" + brand);</script>
